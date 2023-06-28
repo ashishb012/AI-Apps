@@ -19,7 +19,7 @@ body {
   font-family: "Poppins";
   background-size: cover;
   background-repeat: repeat-y;
-  background-image: url("images/moviepitchbg-dark.jpg");
+  background-image: url("../images/moviepitchbg-dark.jpg");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -87,6 +87,9 @@ section {
       Setup 
      ================= */
 
+.setup-container {
+  display: flex;
+}
 .setup-inner {
   display: flex;
   justify-content: space-around;
@@ -102,6 +105,7 @@ section {
 
 .setup-input-container {
   min-height: 74px;
+  display: flex;
 }
 
 .speech-bubble-ai {
@@ -217,6 +221,15 @@ button:hover {
 }
 
 .view-pitch-btn {
+  display: none;
+  color: var(--light);
+  border-radius: var(--border-rad-lg);
+  padding: 1em;
+  margin: 0.4em auto;
+  font-size: 1.2em;
+}
+
+.reset-btn {
   color: var(--light);
   border-radius: var(--border-rad-lg);
   padding: 1em;
@@ -225,12 +238,17 @@ button:hover {
   font-size: 1.2em;
 }
 
-.view-pitch-btn:hover {
+.view-pitch-btn:hover,
+.reset-btn:hover {
   box-shadow: 1px 1px 5px 1px var(--medium-dark);
 }
 
-img.loading {
-  max-width: 40px;
+.loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loading > img {
   filter: none;
 }
 
