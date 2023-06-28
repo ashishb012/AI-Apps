@@ -1,71 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <title>Movie Pitch</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/styles/movieBot.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI apps</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
-
   <body>
-    <header>
-      <img src="./images/logo-movie.png" alt="MoviePitch" />
-      <a href="/"><span>Movie</span>Pitch</a>
-    </header>
-    <main>
-      <!-- The Setup -->
-      <div class="setup">
-        <section id="setup-container">
-          <div class="setup-inner">
-            <img src="/images/movieboss.png" />
-            <div class="speech-bubble-ai" id="speech-bubble-ai">
-              <p id="movie-boss-text">
-                Give me a one-sentence concept and I'll give you an eye-catching
-                title, a synopsis the studios will love, a movie poster... AND
-                choose the cast!
-              </p>
-            </div>
-          </div>
-          <div
-            class="setup-inner setup-input-container"
-            id="setup-input-container"
-          >
-            <textarea
-              id="setup-textarea"
-              placeholder="An evil genius wants to take over the world using AI."
-            ></textarea>
-            <button class="send-btn" id="send-btn" aria-label="send">
-              <img src="images/send-btn-icon.png" alt="send" />
-            </button>
-          </div>
-          <div class="loading" id="loading">
-            <img src="images/loading.svg" />
-          </div>
-        </section>
-
-        <button id="view-pitch-btn" class="view-pitch-btn">View pitch</button>
-      </div>
-      <!-- The Output -->
-      <section class="output-container" id="output-container">
-        <div id="output-img-container" class="output-img-container"></div>
-        <h1 id="output-title"></h1>
-        <h2 id="output-stars"></h2>
-        <p id="output-text"></p>
-        <div>
-          <button id="reset-btn" class="reset-btn">Reset</button>
-        </div>
-      </section>
-    </main>
-    <footer>&copy; 2023 MoviePitch All rights reserved</footer>
-    <script type="module" src="/scripts/movieBot.js"></script>
+    <div class="button-container">
+      <button class="button" onclick="location.href='movieBot.html'">
+        Movie Pitch
+      </button>
+      <button class="button" onclick="location.href='adBot.html'">
+        Ad Bot
+      </button>
+    </div>
   </body>
 </html>

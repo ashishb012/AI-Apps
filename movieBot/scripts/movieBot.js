@@ -4,8 +4,8 @@ import {
   synopsisPrompt,
   imagePrompt,
   imageUrlPrompt,
-} from "./prompts.js";
-import { fetchPromptReply, fetchImage } from "./fetch.js";
+} from "./moviePrompts.js";
+import { fetchPromptReply, fetchImage } from "./movieFetch.js";
 
 const setupInputContainer = document.getElementById("setup-input-container");
 const movieBossText = document.getElementById("movie-boss-text");
