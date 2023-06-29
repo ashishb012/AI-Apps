@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
     <title>Advertify</title>
-    <link rel="stylesheet" href="/ad/styles/adBot.css" />
+    <link rel="stylesheet" href="/src/adBot/styles/adBot.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <main>
       <section class="intro">
@@ -25,7 +24,7 @@
           Get promotional <strong>copy</strong> for your products
           <strong>fast</strong>
         </h2>
-        <p>Powered by AI🤖</p>
+        <p>Powered by AI 🤖</p>
       </section>
       <section class="ad-input" id="ad-input">
         <label for="">Product Name</label>
@@ -37,12 +36,23 @@
         ></textarea>
         <label for="">Target market</label>
         <input type="text" placeholder="all age group" id="target" />
-        <button id="submit-btn">Generate Copy</button>
+        <div class="submit-section">
+          <button type="button" id="submit-btn" class="submit-btn">
+            Generate Copy
+          </button>
+          <div class="loading" id="loading">
+            <img src="/images/loading.svg" alt="loading" />
+          </div>
+        </div>
       </section>
       <section class="ad-output" id="ad-output">
         <h4>Your Copy!</h4>
+        <p id="ad-content"></p>
+        <div>
+          <button type="button" id="reset-btn" class="reset-btn">Reset</button>
+        </div>
       </section>
     </main>
-    <script type="module" src="/ad/scripts/adBot.js"></script>
+    <script type="module" src="/src/adBot/scripts/adBot.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import { OPENAI_API_KEY, ORGANIZATION_KEY } from "../../api_key";
+import { OPENAI_API_KEY, ORGANIZATION_KEY } from "../../../api_key.js";
 import { Configuration, OpenAIApi } from "openai";
 const configuration = new Configuration({
   organization: ORGANIZATION_KEY,
